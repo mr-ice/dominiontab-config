@@ -1,0 +1,18 @@
+echo have you done bin/python setup.py install lately?
+echo --  needed after git pull
+echo
+bin/dominion_dividers \
+--minmargin=1.25x1.25 \
+--no-page-footer \
+--notch-length=1.5 \
+--order=expansion \
+--orientation=vertical \
+--papersize=letter \
+--size=sleeved \
+--sleeved \
+--special-card-groups \
+--tab-side=right \
+--tabwidth=4.75 \
+--thickness=2.57 \
+--wrapper \
+--expansions="$@"
