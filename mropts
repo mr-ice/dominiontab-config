@@ -1,6 +1,6 @@
 outfile = out/dominion_dividers.pdf
 papersize = letter
-font-dir = ../fonts
+font-dir = fonts
 orientation = vertical
 size = sleeved
 sleeved = true
