@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DIR=$(dirname $0)
+
+mkdir -p out
+
+.venv/bin/python3.14 \
+../dominiontabs/bin/dominion_cricut_svg \
+-c $DIR/cutsvg \
+--expansions="$@"
+
+.venv/bin/python3.14 \
+$DIR/dominiontabs/bin/dominion_dividers \
+-c $DIR/mropts \
+--expansions="$@"
